@@ -1,13 +1,21 @@
 <template>
   <Layout>
-    <h1>About us</h1>
+    <About />
   </Layout>
 </template>
 
 <script>
+import About from "@/components/About.vue"
 export default {
+  components:{
+    About
+  },
   metaInfo: {
-    title: 'About us'
+    title: 'About'
   }
 }
 </script>
+
+<style>
+
+</style>

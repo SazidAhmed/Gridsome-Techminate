@@ -1,17 +1,24 @@
 <template>
   <Layout>
     <Home />
-    <Service />
+    <About />
+    <Why />
+    <Service/>
   </Layout>
 </template>
 
 <script>
 import Home from "@/components/Home.vue"
+import About from "@/components/About.vue"
+import Why from "@/components/Why.vue"
 import Service from "@/components/Service.vue"
+
 export default {
   components:{
+    Home,
+    About,
     Service,
-    Home
+    Why,
   },
   metaInfo: {
     title: 'Home'

@@ -1,8 +1,8 @@
 <template>
     <v-container>
         <v-row class="">
-            <v-col cols="12" sm="12" md="8" lg="5">
-                <div class="text-uppercase">
+            <v-col cols="12" sm="12" md="6" lg="6">
+                <div class="text-uppercase ml-5">
                     <p class="font-weight-medium text-h5 mt-10">We Create Result-Oriented Dynamic Applications</p>
                     <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis itaque, perspiciatis fugiat natus libero perferendis et ipsa debitis sint laborum vero quo dignissimos doloremque labore molestiae similique soluta enim iusto mollitia accusamus! Accusantium a ab iusto, amet in dicta aperiam id voluptatibus quisquam minima doloribus quod delectus aspernatur tenetur nemo.</p>
                 </div>
@@ -22,8 +22,8 @@
                     </v-list>
                 </div>
             </v-col>
-            <v-col cols="12" sm="12" md="4" lg="6">
-                <div class="text-center">
+            <v-col cols="12" sm="12" md="6" lg="6">
+                <div class="text-center mt-15">
                     <span class="">
                         <g-image class="mt-5" src="~/assets/why/why.png" quality="90" width="600" height="392" fit="fill"/>
                     </span>

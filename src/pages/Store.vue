@@ -1,17 +1,17 @@
 <template>
   <Layout>
-    <About />
+    <Store />
   </Layout>
 </template>
 
 <script>
-import About from "@/components/About.vue"
+import Store from "@/components/Store.vue"
 export default {
   components:{
-    About
+    Store
   },
   metaInfo: {
-    title: 'About'
+    title: 'Services'
   }
 }
 </script>

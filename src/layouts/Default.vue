@@ -17,11 +17,10 @@
       <v-spacer></v-spacer>
       <div class="hidden-sm-and-down">
         <g-link to="/" style="text-decoration: none;"><v-btn color="white" text rounded>Home</v-btn></g-link>
-        <g-link to="/whychooseus" style="text-decoration: none;"><v-btn color="white" text rounded>Why Us</v-btn></g-link>
-        <g-link to="/service" style="text-decoration: none;"><v-btn color="white" text rounded>Services</v-btn></g-link>
+        <g-link to="/whychooseus" style="text-decoration: none;"><v-btn color="white" text rounded>Why Choose Us ?</v-btn></g-link>
         <g-link to="/portfolio" style="text-decoration: none;"><v-btn color="white" text rounded>Portfolio</v-btn></g-link>
-        <g-link to="/testimonial" style="text-decoration: none;"><v-btn color="white" text rounded>Testimonial</v-btn></g-link>
         <g-link to="/team" style="text-decoration: none;"><v-btn color="white" text rounded>Team</v-btn></g-link>
+        <g-link to="/store" style="text-decoration: none;"><v-btn color="white" text rounded>Store</v-btn></g-link>
         <g-link to="/contact" style="text-decoration: none;"><v-btn color="white" text rounded>Contact</v-btn></g-link>
       </div>
     </v-app-bar>

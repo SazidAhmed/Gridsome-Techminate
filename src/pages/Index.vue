@@ -2,7 +2,9 @@
   <Layout>
     <Home />
     <About />
-    <Service/>
+    <Service />
+    <Clients />
+    <Testimonials />
   </Layout>
 </template>
 
@@ -10,12 +12,16 @@
 import Home from "@/components/Home.vue"
 import About from "@/components/About.vue"
 import Service from "@/components/Service.vue"
+import Clients from "@/components/Clinets.vue"
+import Testimonials from "@/components/Testimonials.vue"
 
 export default {
   components:{
     Home,
     About,
     Service,
+    Clients,
+    Testimonials
   },
   metaInfo: {
     title: 'Home'

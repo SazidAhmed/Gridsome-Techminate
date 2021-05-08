@@ -12,7 +12,7 @@
 import Home from "@/components/Home.vue"
 import About from "@/components/About.vue"
 import Service from "@/components/Service.vue"
-import Clients from "@/components/Clinets.vue"
+import Clients from "@/components/Clients.vue"
 import Testimonials from "@/components/Testimonials.vue"
 
 export default {

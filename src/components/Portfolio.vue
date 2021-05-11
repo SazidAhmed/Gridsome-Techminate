@@ -1,7 +1,7 @@
 <template>
     <div>
       <v-container >
-        <p class="pa-5 mt-10 text-h3 font-weight-medium text-uppercase text-center">Made By Us</p>
+        <p class="pa-5 mt-5 text-h5 font-weight-medium text-uppercase text-center">Made By Us</p>
         <div class="d-flex justify-center mb-5">
           <v-btn-toggle v-model="text" tile color="orange accent-3" group>
             <v-btn @click="filterData(all)" value="all">All</v-btn>

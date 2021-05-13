@@ -5,8 +5,8 @@
         <div class="d-flex justify-center mb-5">
           <v-btn-toggle v-model="text" tile color="orange accent-3" group>
             <v-btn @click="filterData(all)" value="all">All</v-btn>
-            <v-btn @click="filterData(design)" value="left">Design</v-btn>
-            <v-btn @click="filterData(website)" value="center">Website</v-btn>
+            <v-btn @click="filterData(design)" value="left">Store</v-btn>
+            <v-btn @click="filterData(website)" value="center">Management System</v-btn>
             <v-btn @click="filterData(mobile)" value="right">Apps</v-btn>
           </v-btn-toggle>
         </div>

@@ -7,7 +7,7 @@
             <v-card width="250" class="rounded-xl mx-auto">
                 <div class="text-center">
                   <v-avatar size="100" class="mt-5">
-                    <v-icon size="90" class="text--lighten-1">mdi-account-tie</v-icon>
+                    <v-img :src="service.image"></v-img>
                   </v-avatar>
                 </div>
                 <span class="text-h5 text-center font-weight-bold d-block mt-5">{{ service.name }}</span>
@@ -28,7 +28,7 @@
             <v-card width="250" class="rounded-xl mx-auto">
                 <div class="text-center">
                   <v-avatar size="100" class="mt-5">
-                    <v-icon size="90" class="text--lighten-1">mdi-account-tie</v-icon>
+                    <v-img :src="service.image"></v-img>
                   </v-avatar>
                 </div>
                 <span class="text-h5 text-center font-weight-bold d-block mt-5">{{ service.name }}</span>
@@ -55,9 +55,9 @@ export default {
   data(){
     return{
       core:[
-        {"name":"Sazid Ahmed","designation":"Software Engineer", "linkedin":"", "github":"", "email":"sazidahmed.official@gmail.com"},
-        {"name":"Sazid Ahmed","designation":"Software Engineer", "linkedin":"", "github":"", "email":"sazidahmed.official@gmail.com"},
-        {"name":"Sazid Ahmed","designation":"Software Engineer", "linkedin":"", "github":"", "email":"sazidahmed.official@gmail.com"},
+        {"name":"Sazid Ahmed","designation":"Software Engineer", "image":"https://cdn.vuetifyjs.com/images/cards/sunshine.jpg", "linkedin":"", "github":"", "email":"sazidahmed.official@gmail.com"},
+        {"name":"Sazid Ahmed","designation":"Software Engineer","image":"https://cdn.vuetifyjs.com/images/cards/sunshine.jpg", "linkedin":"", "github":"", "email":"sazidahmed.official@gmail.com"},
+        {"name":"Sazid Ahmed","designation":"Software Engineer","image":"https://cdn.vuetifyjs.com/images/cards/sunshine.jpg", "linkedin":"", "github":"", "email":"sazidahmed.official@gmail.com"},
       ],
        services:[
         {"name":"Sazid Ahmed","designation":"Software Engineer", "linkedin":"", "github":"", "email":"sazidahmed.official@gmail.com"},

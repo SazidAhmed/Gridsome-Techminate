@@ -6,10 +6,26 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
+const axios = require('axios')
 
 module.exports = function (api) {
-  api.loadSource(({ addCollection }) => {
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
+  // api.loadSource(({ addCollection }) => {
+    
+  // })
+  api.loadSource(async actions => {
+    const { data } = await axios.get('http://127.0.0.1:8000/api/projects')
+
+    const collection = actions.addCollection('Projects')
+
+    for (const project of data) {
+      collection.addNode({
+        id: project.id,
+        title: project.title,
+        link: project.link,
+        project_type: project.project_type,
+        get_image: project.get_image
+      })
+    }
   })
 
   api.createPages(({ createPage }) => {

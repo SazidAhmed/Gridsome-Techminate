@@ -9,6 +9,6 @@ class ProjectSerializer(serializers.ModelSerializer):
             "id",
             "title",
             "link",
-            "project_type"
+            "project_type",
             "get_image",
         )

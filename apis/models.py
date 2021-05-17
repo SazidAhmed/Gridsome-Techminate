@@ -33,24 +33,29 @@ class Project(models.Model):
 class Team(models.Model):
     # Project type
 
-    DESIGN = 'design'
-    WEBSITE = 'website'
-    APP = 'app'
+    CORE = 'core'
+    BUSINESS = 'business'
+    CONTRIBUTOR = 'contributor'
 
     TEAM_TYPES = (
-        (DESIGN, 'design'),
-        (WEBSITE, 'website'),
-        (APP, 'app')
+        (CORE, 'core'),
+        (BUSINESS, 'business'),
+        (CONTRIBUTOR, 'contributor')
     )
 
     # Fields
+    name = models.CharField(max_length=255)
     title = models.CharField(max_length=255)
-    link = models.CharField(max_length=255)
-    team_type = models.CharField(max_length=20, choices=TEAM_TYPES, default=WEBSITE)
-    image = models.ImageField(upload_to='uploads/', blank=True, null=True)
+    email = models.CharField(max_length=255, blank=True, null=True)
+    linkedin = models.CharField(max_length=255, blank=True, null=True)
+    portfolio = models.CharField(max_length=255, blank=True, null=True)
+    github = models.CharField(max_length=255, blank=True, null=True)
+    discord = models.CharField(max_length=255, blank=True, null=True)
+    team_type = models.CharField(max_length=20, choices=TEAM_TYPES, default=CONTRIBUTOR)
+    image = models.ImageField(upload_to='team/', blank=True, null=True)
 
     def __str__(self):
-        return self.title
+        return self.name
     
     def get_image(self):
         if self.image:

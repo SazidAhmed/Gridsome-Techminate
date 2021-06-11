@@ -69,7 +69,7 @@ export default {
       try{
         //simulate delay 
         await new Promise (resolve => {
-          setTimeout(resolve, 1500)
+          setTimeout(resolve, 2000)
         })
         this.filtered = this.projectlist;
       }
